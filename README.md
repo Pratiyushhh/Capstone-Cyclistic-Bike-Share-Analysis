@@ -173,8 +173,8 @@ Cyclistic-Case-Study/
 ## 📄 **View Case Study**
 
 **📑 [Complete R Analysis](./Cyclistic_case_study_notebook.pdf)** - Full executive report with code  
-**📊 [Executive Dashboard](./output/viz/executive_dashboard.png)** - Combined strategic insights  
-**📈 [Key Visualizations](./output/viz/)** - Individual charts and analysis graphics  
+**📊 [Executive Dashboard](#-executive-dashboard)** - Combined strategic insights  
+**📈 [Key Visualizations](#-key-visualizations)** - Individual charts and analysis graphics  
 
 ---
 
