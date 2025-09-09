@@ -1,3 +1,9 @@
+# Ignore entire data folder
+data/
+
+# Ignore processed dataset inside output folder
+output/cyclistic_processed_data.csv
+
 # History files
 .Rhistory
 .Rapp.history
