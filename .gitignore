@@ -4,6 +4,9 @@ data/
 # Ignore processed dataset inside output folder
 output/cyclistic_processed_data.csv
 
+# VS Code filea
+.vscode/
+
 # History files
 .Rhistory
 .Rapp.history

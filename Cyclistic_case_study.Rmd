@@ -18,7 +18,7 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(
-  echo = FALSE,
+  echo = TRUE,
   message = FALSE,
   warning = FALSE,
   fig.width = 12,
@@ -541,7 +541,7 @@ members_data <- all_trips_clean %>% filter(user_type == "Annual Member")
 casual_data <- all_trips_clean %>% filter(user_type == "Casual Rider")
 
 # Export processed data for stakeholder use
-# write_csv(all_trips_clean, "output/cyclistic_processed_data.csv")
+write_csv(all_trips_clean, "output/cyclistic_processed_data.csv")
 ```
 
 ### *Data Processing Summary for Executive Confidence*
@@ -865,6 +865,10 @@ casual_leisure_trips <- commute_analysis %>%
   filter(user_type == "Casual Rider", likely_commute == "Likely Leisure") %>%
   pull(trip_count)
 
+casual_commute_trips <- commute_analysis %>%
+  filter(user_type == "Casual Rider", likely_commute == "Likely Commute") %>%
+  pull(trip_count)
+
 conversion_potential_10pct <- round(casual_leisure_trips * 0.10)
 conversion_potential_15pct <- round(casual_leisure_trips * 0.15)
 
@@ -1033,12 +1037,12 @@ Based on comprehensive analysis of 5.47 million trips, I present three strategic
 - **Messaging Framework:** *"From weekend warrior to weekday champion"*
 - **Geographic Focus:** High-density casual rider neighborhoods and leisure destinations
 
-**Expected ROI:** 120,000+ new members at 10% conversion rate  
+**Expected ROI:** 36,000+ new members at 10% conversion rate  
 **Budget Impact:** Campaign investment with 12-month payback period
 
 **Success Metrics:**
 
-- 10% conversion rate target (120,000 new spring members)
+- 10% conversion rate target (36,000+ new spring members)
 - 25% reduction in seasonal volatility
 - 15% increase in average revenue per user
 
@@ -1088,7 +1092,7 @@ Based on comprehensive analysis of 5.47 million trips, I present three strategic
 
 - 78% of casual trips are leisure = largest conversion opportunity (`r comma(casual_leisure_trips)` trips)
 - No technology barriers: 57% electric bike adoption by both groups
-- Proven concept: 428,000 casual commute trips demonstrate successful behavior change
+- Proven concept: `r comma(casual_commute_trips)` casual commute trips demonstrate successful behavior change
 
 **How to Execute:**
 
