@@ -69,7 +69,7 @@ Analyze 12 months of Chicago bike-share data to identify behavioral differences 
 - **Timing:** March-May 2026 (optimal rebound window)
 - **Messaging:** "Complete trips 1.7x faster as a member"
 - **Target:** Weekend leisure riders with weekday convenience offers
-- **Expected ROI:** 120,000+ new members at 10% conversion rate
+- **Expected ROI:** 36,000+ new members at 10% conversion rate
 
 ### **2. Behavioral Messaging Strategy**
 - **Core Message:** "Why take 20 minutes when you could take 12?"
